@@ -49,7 +49,7 @@ export const VisionFace = () => {
             className="relative w-full max-w-[500px] aspect-square"
           >
             <Image
-              src="/hero-bg.svg"
+              src="/vision/Vision1.webp"
               alt="VisionFace AI Recognition"
               fill
               className="object-contain"

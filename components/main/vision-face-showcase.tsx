@@ -176,9 +176,24 @@ export default function VisionFaceShowcase() {
           <h2 className="text-3xl font-bold mb-6 flex items-center gap-2 text-white">
             <span>💡</span> What is VisionFace™?
           </h2>
-          <p className="text-lg text-gray-300 leading-relaxed">
-            VisionFace™ is a cutting-edge, on-premise facial recognition solution built for real-world use cases — hospitals, schools, corporate campuses, manufacturing units, and live events. Whether you're managing staff attendance, visitor entry, student tracking, or kiosk check-ins, VisionFace™ delivers unmatched accuracy and speed, even under challenging conditions like scarves, hats, glasses, or crowd density.
-          </p>
+          <div className="flex flex-col md:flex-row gap-8 items-center">
+            <div className="w-full md:w-1/2">
+              <p className="text-lg text-gray-300 leading-relaxed">
+                VisionFace™ is a cutting-edge, on-premise facial recognition solution built for real-world use cases — hospitals, schools, corporate campuses, manufacturing units, and live events. Whether you're managing staff attendance, visitor entry, student tracking, or kiosk check-ins, VisionFace™ delivers unmatched accuracy and speed, even under challenging conditions like scarves, hats, glasses, or crowd density.
+              </p>
+            </div>
+            <motion.div 
+              className="w-full md:w-1/2 relative aspect-video rounded-xl overflow-hidden"
+              whileHover={{ scale: 1.02 }}
+            >
+              <Image
+                src="/vision/vision2.png"
+                alt="VisionFace AI Recognition Interface"
+                fill
+                className="object-cover"
+              />
+            </motion.div>
+          </div>
         </motion.div>
 
         {/* Key Features */}
