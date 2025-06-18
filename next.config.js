@@ -4,6 +4,14 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+  async redirects() {
+    return []
+  },
+  async rewrites() {
+    return []
+  },
   // Enable static export for nginx HTML folder deployment
   output: 'export',
   
@@ -16,7 +24,7 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'ssl.gstatic.com',
         port: '',
-        pathname: '/**',
+        pathname: '/products/**',
       },
       {
         protocol: 'https',

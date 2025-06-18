@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { slideInFromLeft, slideInFromRight } from "@/lib/motion";
 
 const fadeInUp = {
@@ -76,7 +77,7 @@ export const VisionFace = () => {
             variants={fadeInUp}
             className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed"
           >
-            VisionFace™ is a cutting-edge, on-premise facial recognition solution built for real-world use cases — hospitals, schools, corporate campuses, manufacturing units, and live events. Whether you're managing staff attendance, visitor entry, student tracking, or kiosk check-ins, VisionFace™ delivers unmatched accuracy and speed, even under challenging conditions like scarves, hats, glasses, or crowd density.
+            VisionFace™ is a cutting-edge, on-premise facial recognition solution built for real-world use cases — hospitals, schools, corporate campuses, manufacturing units, and live events. Whether you&apos;re managing staff attendance, visitor entry, student tracking, or kiosk check-ins, VisionFace™ delivers unmatched accuracy and speed, even under challenging conditions like scarves, hats, glasses, or crowd density.
           </motion.p>
 
           <motion.div 
@@ -110,24 +111,26 @@ export const VisionFace = () => {
             variants={fadeInUp}
             className="mt-8"
           >
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 rounded-lg bg-gradient-to-r from-purple-500 to-cyan-500 text-white font-medium
-                         hover:from-purple-600 hover:to-cyan-600 transition-all duration-300
-                         shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40
-                         flex items-center gap-2 group"
-            >
-              Know More
-              <motion.span
-                initial={{ x: 0 }}
-                whileHover={{ x: 5 }}
-                transition={{ duration: 0.2 }}
-                className="inline-block"
+            <Link href="/products">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-3 rounded-lg bg-gradient-to-r from-purple-500 to-cyan-500 text-white font-medium
+                           hover:from-purple-600 hover:to-cyan-600 transition-all duration-300
+                           shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40
+                           flex items-center gap-2 group"
               >
-                →
-              </motion.span>
-            </motion.button>
+                Know More
+                <motion.span
+                  initial={{ x: 0 }}
+                  whileHover={{ x: 5 }}
+                  transition={{ duration: 0.2 }}
+                  className="inline-block"
+                >
+                  →
+                </motion.span>
+              </motion.button>
+            </Link>
           </motion.div>
         </motion.div>
       </motion.div>

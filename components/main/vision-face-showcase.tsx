@@ -21,7 +21,6 @@ const features = [
     title: "Advanced Recognition Engine",
     icon: "🧠",
     points: [
-      "Powered by ArcFace + InsightFace AI",
       "Supports 1:1 verification and 1:N identification",
       "Works with partial face occlusions (scarves, masks, caps)"
     ]
@@ -179,7 +178,7 @@ export default function VisionFaceShowcase() {
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="w-full md:w-1/2">
               <p className="text-lg text-gray-300 leading-relaxed">
-                VisionFace™ is a cutting-edge, on-premise facial recognition solution built for real-world use cases — hospitals, schools, corporate campuses, manufacturing units, and live events. Whether you're managing staff attendance, visitor entry, student tracking, or kiosk check-ins, VisionFace™ delivers unmatched accuracy and speed, even under challenging conditions like scarves, hats, glasses, or crowd density.
+                VisionFace™ is a cutting-edge, on-premise facial recognition solution built for real-world use cases — hospitals, schools, corporate campuses, manufacturing units, and live events. Whether you&apos;re managing staff attendance, visitor entry, student tracking, or kiosk check-ins, VisionFace™ delivers unmatched accuracy and speed, even under challenging conditions like scarves, hats, glasses, or crowd density.
               </p>
             </div>
             <motion.div 
@@ -313,7 +312,7 @@ export default function VisionFaceShowcase() {
           variants={fadeInUp}
         >
           <h2 className="text-3xl font-bold mb-8 flex items-center gap-2 text-white">
-            <span>🧰</span> What's Included
+            <span>🧰</span> What&apos;s Included
           </h2>
           <div className="backdrop-blur-sm bg-white/5 rounded-xl p-6 border border-white/10">
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
